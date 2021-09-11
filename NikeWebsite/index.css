@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  /* always use in a CSS file. Learnt from FrontEndMasters */
+}
+
+/* url() to add a background image using CSS*/
+body {
+  background-image: url(Nike-Shoes-Transparent-Background.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 350px 60px;
+}
+
+/* First flex to get all logo+brandName and the other links into a flex*/
+.brand-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+/* justify-content: flex-start aranges the elements to the beginning of the flex box they are in*/
+.brand-logo-name {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 75px;
+  justify-content: flex-start;
+}
+
+.brand-logo {
+  width: 40px;
+  height: 30px;
+}
+
+.brand-name {
+  font-family: cursive;
+  font-size: 30px;
+}
+
+/* The menu of items are to be arranged in a row themselves so its made using a new flex for all li's in ul with the class .brand-items*/
+.brand-items {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+/* Removing the underline(text-decoration)*/
+.brand-nav-links a {
+  text-decoration: none;
+  font-style: normal;
+  color: black;
+  font-size: 14px;
+  font-family: monospace;
+}
+
+/*Changing the font color and text decoration when the links are hovered upon*/
+.brand-nav-links a:hover {
+  text-decoration: underline;
+  color: orangered;
+}
+
+.mid-text {
+  margin-top: 150px;
+  margin-left: 75px;
+}
+
+.shoe-title {
+  font-size: 50px;
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.shoe-about {
+  margin: 10px 0px;
+  font-size: 12px;
+  font-style: normal;
+  font-family: monospace;
+}
+
+/*Order now Button*/
+.brand-button {
+  border: none;
+  color: white;
+  background-color: #42a5e8;
+  cursor: pointer;
+  padding: 10px 40px 10px 40px;
+  font-weight: bold;
+}
+
+/* Changes the color of the Button when the mouse is hovered*/
+.brand-button:hover {
+  background-color: orangered;
+}

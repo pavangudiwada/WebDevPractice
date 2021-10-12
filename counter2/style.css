@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0px;
+}
+
+.counter-container{
+    background-color: #2B303A;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.mid-container{
+    background-color: #92DCE5;
+    min-width: 300px;
+    width:50%;
+    max-width: 800px;
+    height: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: column;
+    column-gap: 20%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px black;
+}
+
+h3{
+    margin: 0px;
+}
+
+
